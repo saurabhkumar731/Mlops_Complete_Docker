@@ -1,0 +1,19 @@
+install Docker Dekstop
+sign in to Dockerhub and Docker Dekstop (same)
+Docke Dekstop:
+>check docker install :cli ->"docker"
+>pull the hello-world image and run it
+
+Assure that you're logged in :docker login
+
+Build docker image :docker build -t mlops-new-docker-demo .
+
+Run the container: docker run -p 5000:5000 mlops-new-docker-demo
+
+Tag your image: docker tag mlops-new-docker-demo saurabhmlops/mlops-new-docker-demo:latest
+
+push image to dockerhub:docker push saurabhmlops/mlops-new-docker-demo:latest
+
+Pull image from dockerhub:docker pull saurabhmlops/mlops-new-docker-demo:lateset
+
+Run the Pulled image:docker run -p 5000:5000 saurabhmlops/mlops-new-docker-demo:lateset
